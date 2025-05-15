@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All the Cute Stuff!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧸 All My Games & Apps 🧸</h1>
+    <div id="content"></div>
+    <br>
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    const contentList = [
+      {
+        name: "Flappy Bird",
+        url: "https://neal.fun/flappy-bird/"
+      },
+      {
+        name: "2048",
+        url: "https://play2048.co/"
+      },
+      {
+        name: "Your App Clone",
+        url: "https://your-own-site.com/app"
+      }
+    ];
+
+    const container = document.getElementById("content");
+
+    contentList.forEach(item => {
+      const block = document.createElement("div");
+      block.innerHTML = `
+        <h2>${item.name}</h2>
+        <iframe src="${item.url}" width="800" height="600"></iframe>
+        <hr>
+      `;
+      container.appendChild(block);
+    });
+  </script>
+</body>
+</html>

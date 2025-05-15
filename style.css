@@ -1,0 +1,35 @@
+body {
+  background-color: #ffe4f0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  color: #ff69b4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+iframe {
+  border: 3px solid pink;
+  border-radius: 12px;
+  margin-top: 20px;
+}
